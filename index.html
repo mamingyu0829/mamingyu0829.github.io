@@ -1,5 +1,3458 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>马明瑜 · Academic Homepage</title><meta name="description" content="马明瑜的个人学术主页：博弈论、强化学习与博弈优化"><style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
-:root{--ink:#102135;--muted:#657689;--line:#dfe7ed;--paper:#f7fafc;--white:#fff;--navy:#0c1b2d;--blue:#2876e8;--aqua:#6fd8ce;--orange:#f2a55f;--r:18px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Manrope,'Noto Sans SC',sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.top{position:sticky;top:0;z-index:5;background:#f7fafce8;border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.mark{width:40px;height:40px;display:grid;place-items:center;color:#fff;background:var(--ink);border-radius:11px;font-weight:800}.brand small{display:block;color:var(--muted);font:10px 'DM Mono',monospace;letter-spacing:.14em}.links{display:flex;gap:24px;font-size:13px;font-weight:700;color:#506477}.links a:hover{color:var(--blue)}.hero{min-height:650px;display:grid;align-items:center;background:radial-gradient(circle at 88% 12%,#6fd8ce28,transparent 31%),radial-gradient(circle at 6% 86%,#2876e814,transparent 36%)}.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:90px;align-items:center}.eyebrow,.label{color:#668096;font:500 11px 'DM Mono',monospace;letter-spacing:.16em;text-transform:uppercase}.eyebrow{color:var(--blue)}h1{font-size:clamp(54px,8vw,90px);line-height:1.03;letter-spacing:-.08em;margin:18px 0}h1 span{color:var(--blue)}h1 i{color:var(--aqua);font-style:normal}.lead{font-size:18px;font-weight:800;margin:0 0 8px}.summary{max-width:580px;color:var(--muted);font-size:15px}.actions{display:flex;gap:12px;margin:28px 0}.btn{display:inline-flex;padding:11px 18px;border-radius:10px;font-size:13px;font-weight:800}.primary{color:#fff;background:var(--ink)}.ghost{border:1px solid var(--line);background:#fff}.meta{display:flex;gap:24px;color:var(--muted);font-size:13px}.meta a{color:var(--blue)}.orb{min-height:360px;position:relative;display:grid;place-items:center;border:1px solid #6fd8ce77;border-radius:44% 56% 61% 39%/46% 40% 60% 54%;background:linear-gradient(145deg,#fff,#eaf5f6);box-shadow:0 20px 48px #19334a15}.avatar{width:150px;height:150px;display:grid;place-items:center;border-radius:50%;color:#fff;background:linear-gradient(145deg,var(--ink),#2876e8);font-size:76px;font-weight:900;box-shadow:0 18px 40px #2876e84a}.orbText{position:absolute;bottom:24px;left:0;right:0;text-align:center;color:#6b8493;font:11px 'DM Mono',monospace;letter-spacing:.1em}.section{padding:105px 0}.white{background:#fff}.grid2{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}h2{font-size:34px;line-height:1.15;letter-spacing:-.04em;margin:10px 0 22px}h2 em{color:var(--blue);font-style:normal}.copy{color:var(--muted);font-size:15px}.stats{display:flex;gap:35px;margin-top:30px}.stats strong{display:block;font-size:28px;color:var(--ink)}.stats span{font-size:11px;color:#8294a4}.heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:35px}.line{height:1px;flex:1;background:var(--line);margin:0 0 15px 30px}.timeline{border-left:1px solid var(--line);padding-left:24px}.event{display:grid;grid-template-columns:80px 1fr;gap:16px;padding:4px 0 30px}.event time{color:var(--blue);font:12px 'DM Mono',monospace}.event h3{margin:0 0 5px;font-size:17px}.event p{margin:0;color:var(--muted);font-size:13px}.tag{display:inline-block;margin-bottom:6px;color:#468e85;font:10px 'DM Mono',monospace;letter-spacing:.12em}.dark{color:#eff7fb;background:var(--navy)}.dark .label{color:#84a8ba}.dark .line{background:#ffffff25}.pub{display:grid;grid-template-columns:70px 1fr;gap:22px;padding:25px 0;border-top:1px solid #ffffff1c}.year{color:var(--aqua);font:13px 'DM Mono',monospace}.pub h3{margin:0 0 8px;font-size:19px;line-height:1.35}.pub p{margin:5px 0;color:#a8bac7;font-size:13px}.pub strong{color:#fff}.pub a{color:var(--aqua);font-size:12px}.edu{display:grid;grid-template-columns:160px 1fr auto;gap:25px;padding:24px 0;border-top:1px solid var(--line);align-items:start}.edu h3{margin:0;font-size:20px}.edu p,.edu small{color:var(--muted);font-size:13px}.edu b{font-size:11px;color:var(--blue)}.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.focusCard,.project{padding:26px;border:1px solid var(--line);border-radius:var(--r);background:#fff}.focusCard span,.project span{color:var(--aqua);font:11px 'DM Mono',monospace}.focusCard h3,.project h3{margin:30px 0 8px;font-size:19px}.focusCard p,.project p{margin:0;color:var(--muted);font-size:13px}.awards{display:grid;grid-template-columns:1.2fr .8fr;gap:46px}.award{display:grid;grid-template-columns:55px 1fr 28px;gap:16px;align-items:start;padding:18px 0;border-top:1px solid var(--line)}.award h3{margin:0;font-size:16px}.award p{margin:4px 0 0;color:var(--muted);font-size:12px}.award .year{color:var(--blue)}.cert{min-height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border-radius:10px;background:linear-gradient(145deg,#192c40,#335c73);color:#fff;text-align:center}.cert strong{max-width:210px}.cert small{color:#b9d0da}.contact{color:#fff;background:linear-gradient(115deg,#101e31,#1d3f57)}.contactBox{display:flex;align-items:end;justify-content:space-between;gap:25px}.contact .label{color:#94afc2}.contact h2{margin:10px 0;color:#fff}.contact h2 em{color:var(--aqua)}.email{color:var(--aqua);border-bottom:1px solid #ffffff66;padding-bottom:7px}.foot{padding:25px 0;color:#a8bac7;background:var(--navy);font:11px 'DM Mono',monospace;display:flex;justify-content:space-between}.foot a{color:#fff}@media(max-width:820px){.wrap{width:min(100% - 34px,620px)}.links{display:none}.hero{padding:70px 0}.heroGrid,.grid2,.awards{grid-template-columns:1fr;gap:42px}.orb{min-height:300px}.section{padding:76px 0}.focus{grid-template-columns:1fr}.edu{grid-template-columns:1fr;gap:8px}.contactBox{align-items:start;flex-direction:column}.foot{flex-direction:column;gap:8px}.stats{gap:20px}}
-+</style></head><body><header class="top"><div class="wrap nav"><a class="brand" href="#top"><span class="mark">MM</span><span><strong>马明瑜</strong><small>ACADEMIC HOMEPAGE</small></span></a><nav class="links"><a href="#about">关于</a><a href="#news">动态</a><a href="#publications">论文</a><a href="#education">教育</a><a href="#focus">方向</a><a href="#awards">荣誉</a><a href="#contact">联系</a></nav></div></header><main id="top"><section class="hero"><div class="wrap heroGrid"><div><p class="eyebrow">GAME THEORY · REINFORCEMENT LEARNING · OPTIMIZATION</p><h1>你好，我是<br><span>马明瑜</span><i>。</i></h1><p class="lead">西北工业大学数学与统计学院 · 硕士研究生</p><p class="summary">我的研究兴趣围绕博弈论、强化学习与博弈优化，关注动态决策、复杂网络和智能系统中的建模、学习与控制问题。</p><div class="actions"><a class="btn primary" href="#publications">查看研究成果 ↗</a><a class="btn ghost" href="#contact">联系我</a></div><div class="meta"><span>西安 · 中国</span><a href="mailto:mingyuma0829@163.com">mingyuma0829@163.com</a></div></div><div class="orb"><div class="avatar">马</div><div class="orbText">OPEN TO RESEARCH CONVERSATIONS · 2026</div></div></div></section><section id="about" class="section white"><div class="wrap grid2"><div><p class="label">01 / ABOUT</p><h2>从数学结构出发<br><em>理解智能决策。</em></h2></div><div class="copy"><p>我本科就读于新疆大学数学与系统科学学院，学术成绩位列前 5%，并获评优秀毕业生。现在就读于西北工业大学数学与统计学院，继续探索数学理论与智能方法的交汇。</p><p>我的研究兴趣集中在博弈论、强化学习与博弈优化，尤其关注多主体系统中的策略学习、协同控制和可解释的优化机制。</p><div class="stats"><div><strong>3</strong><span>主页展示论文</span></div><div><strong>4</strong><span>代表性荣誉</span></div><div><strong>2026</strong><span>国家奖学金</span></div></div></div></div></section><section id="news" class="section"><div class="wrap"><div class="heading"><div><p class="label">02 / NEWS</p><h2>最近动态</h2></div><span class="line"></span></div><div class="timeline"><article class="event"><time>2026</time><div><span class="tag">HONOR</span><h3>获得国家奖学金</h3><p>以本科阶段的学业表现、科研实践与综合素质获得 2026 年国家奖学金。</p></div></article><article class="event"><time>2026.09</time><div><span class="tag">NEXT</span><h3>进入西北工业大学数学与统计学院</h3><p>开始硕士阶段学习，研究方向聚焦博弈论、强化学习与博弈优化。</p></div></article><article class="event"><time>2025</time><div><span class="tag">PAPER</span><h3>持续推进控制与复杂网络研究</h3><p>围绕多权耦合神经网络、空间采样控制与同步问题形成系列论文成果。</p></div></article></div></div></section><section id="publications" class="section dark"><div class="wrap"><div class="heading"><div><p class="label">03 / PUBLICATIONS</p><h2>精选论文</h2></div><span class="line"></span></div><article class="pub"><span class="year">2026</span><div><h3>Spatial Sampling-based Passivity and Synchronization of Multiweighted Coupled Reaction-diffusion Neural Networks</h3><p>Haodong Cui, Haoyun Tang, <strong>Mingyu Ma</strong>, Cheng Hu, Tingting Shi</p><p>Communications in Nonlinear Science and Numerical Simulation · 2026</p></div></article><article class="pub"><span class="year">2025</span><div><h3>Adaptive Passivity-based Synchronization of Spatiotemporal Neural Networks with Multi-weighted Coupling under Spatially Point Measurements</h3><p><strong>Mingyu Ma</strong>, Haodong Cui, Haoyun Tang, Cheng Hu, Tingting Shi</p><p>The 21st Chinese Intelligent Systems Conference (CISC2025) · Accepted</p></div></article><article class="pub"><span class="year">2025</span><div><h3>Research on Simulation of Multi-node Motion States of the Bench Dragon Based on Archimedean Spiral and ode45 Algorithm</h3><p>Shuzhi Liu, <strong>Mingyu Ma</strong>, Zhongyang Zhou</p><p>IPIIS 2025 · Accepted</p></div></article></div></section><section id="education" class="section white"><div class="wrap"><div class="heading"><div><p class="label">04 / EDUCATION</p><h2>教育经历</h2></div><span class="line"></span></div><div class="edu"><span class="year">2026.09 — Present</span><div><h3>西北工业大学</h3><p>数学与统计学院 · 硕士研究生</p><small>研究方向：博弈论、强化学习、博弈优化</small></div><b>硕士</b></div><div class="edu"><span class="year">2022 — 2026</span><div><h3>新疆大学</h3><p>数学与系统科学学院 · 本科</p><small>学术成绩前 5% · 优秀毕业生</small></div><b>本科</b></div></div></section><section id="focus" class="section"><div class="wrap"><div class="heading"><div><p class="label">05 / RESEARCH FOCUS</p><h2>研究方向</h2></div><span class="line"></span></div><div class="focus"><article class="focusCard"><span>01</span><h3>博弈论</h3><p>研究多主体互动中的策略、均衡与机制设计，为复杂决策提供结构化分析。</p></article><article class="focusCard"><span>02</span><h3>强化学习</h3><p>关注智能体在不确定环境中的策略学习、价值估计与稳定训练。</p></article><article class="focusCard"><span>03</span><h3>博弈优化</h3><p>探索博弈模型与优化算法的结合，服务于协同控制和智能系统决策。</p></article></div></div></section><section id="awards" class="section white"><div class="wrap"><div class="heading"><div><p class="label">06 / HONORS</p><h2>代表性荣誉</h2></div><span class="line"></span></div><div class="awards"><div><article class="award"><span class="year">2026</span><div><h3>国家奖学金</h3><p>教育部 · 国家级</p></div><b>01</b></article><article class="award"><span class="year">2023</span><div><h3>中国国际大学生创新大赛（2023）银奖</h3><p>团队成员 · 国家级</p></div><b>02</b></article><article class="award"><span class="year">2024</span><div><h3>全国大学生市场调查与分析大赛总决赛三等奖</h3><p>“正大杯”全国赛</p></div><b>03</b></article><article class="award"><span class="year">2023</span><div><h3>全国大学生数学竞赛（数学 A 类）一等奖</h3><p>第十五届全国大学生数学竞赛</p></div><b>04</b></article></div><div class="cert"><span>MM</span><strong>Selected honors</strong><small>证书原图可按需补充到仓库</small></div></div></div></section><section id="contact" class="section contact"><div class="wrap contactBox"><div><p class="label">07 / CONTACT</p><h2>一起讨论一个<br><em>有趣的问题。</em></h2></div><a class="email" href="mailto:mingyuma0829@163.com">mingyuma0829@163.com ↗</a></div></section></main><footer class="foot"><span>© <span id="y">2026</span> Mingyu Ma</span><a href="#top">返回顶部 ↑</a></footer><script>document.getElementById('y').textContent=new Date().getFullYear();</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Search metadata -->
+    <title>Mingyu Ma | Academic Homepage</title>
+    <meta name="description" content="Mingyu Ma is an M.S. student in Applied Mathematics at Xi'an Jiaotong University researching world action models, reinforcement learning, and embodied intelligence.">
+    <meta name="keywords" content="Mingyu Ma, World Action Model, Reinforcement Learning, Diffusion Model, Spatial Intelligence, Flow Matching, Autonomous Driving, Decision Planning, Motion Planning, Multi-Agent Reinforcement Learning, Vision-Language-Action, VLA, RSI, Dexterous Manipulation, Nexus Lab, Peking University, LinkerBot, Xinjiang University, Xi'an Jiaotong University, Meituan">
+    <meta name="author" content="Mingyu Ma">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="Mingyu Ma | Academic Homepage">
+    <meta property="og:description" content="Research on world action models, reinforcement learning, and embodied intelligence">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mamingyu0829.github.io/">
+    <meta property="og:image" content="https://mamingyu0829.github.io/image.png?v=20260824c">
+    <meta property="og:image:secure_url" content="https://mamingyu0829.github.io/image.png?v=20260824c">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="987">
+    <meta property="og:image:height" content="984">
+    <meta property="og:image:alt" content="Mingyu Ma's illustrated avatar">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mingyu Ma | Academic Homepage">
+    <meta name="twitter:description" content="Research on world action models, reinforcement learning, and embodied intelligence">
+    <meta name="twitter:image" content="https://mamingyu0829.github.io/image.png?v=20260824c">
+    <meta name="twitter:image:alt" content="Mingyu Ma's illustrated avatar">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mamingyu0829.github.io/">
+    
+    <!-- Language -->
+    <meta name="language" content="en">
+    <link rel="alternate" hreflang="en" href="https://mamingyu0829.github.io/">
+
+    <!-- Site icons and sharing thumbnail -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png?v=20260824c">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png?v=20260824c">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=20260824c">
+    <link rel="image_src" href="https://mamingyu0829.github.io/image.png?v=20260824c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <style id="site-styles">
+.project-img-fixed {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    display: block;
+    background: var(--bg-secondary);
+}
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Theme tokens (used via var(--...)) */
+    --bg-hero: #ffffff;
+    --bg-card: #ffffff;
+    --bg-secondary: #ffffff;
+
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+
+    --border-color: #e5e7eb;
+    --shadow-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Layout and Profile Sidebar */
+.layout-wrapper {
+    display: flex;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 28px auto;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 40px;
+    text-align: left;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-avatar {
+    width: 212px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 18px;
+    padding: 6px;
+    background: #ffffff;
+    border: 1px solid #d8dee7;
+    border-radius: 0;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+    overflow: hidden;
+}
+
+
+.profile-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+.profile-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.profile-subname {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.profile-title {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.profile-org {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.profile-dept {
+    color: #555;
+    font-size: 0.92rem;
+    margin-bottom: 15px;
+}
+
+.profile-motto {
+    color: #555;
+    font-size: 0.88rem;
+    font-style: italic;
+    line-height: 1.45;
+    border-left: 3px solid #003366;
+    padding: 4px 0 4px 10px;
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+.profile-info-list,
+.profile-social-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.profile-info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.profile-info-list li i {
+    width: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.profile-social-list {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.profile-social-list li {
+    margin-bottom: 8px;
+}
+
+.profile-social-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #424242;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.profile-social-list a:hover {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.profile-social-list i {
+    width: 16px;
+    text-align: center;
+}
+
+.main-content-area {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+/* Slightly larger body text */
+.main-content-area p,
+.main-content-area li {
+    font-size: 1.02rem;
+    line-height: 1.72;
+    color: #1f2933;
+}
+.main-content-area h2 {
+    position: relative;
+    padding-left: 1.7em;
+    font-size: 1.55rem;
+    margin: 0.9rem 0 0.55rem;
+    color: #111827;
+}
+
+.main-content-area h2::before {
+    content: "📌";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.3em;
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1;
+    background: none;
+    border-radius: 0;
+}
+
+/* Section title emoji markers */
+.main-content-area h2#biography::before {
+    content: "👤";
+}
+
+.main-content-area h2#news::before {
+    content: "📰";
+}
+
+.main-content-area h2#publications::before {
+    content: "📄";
+}
+
+.main-content-area h2#education::before {
+    content: "🎓";
+}
+
+.main-content-area h2#experience::before {
+    content: "💼";
+}
+
+.main-content-area h2#awards::before {
+    content: "🏆";
+}
+
+.main-content-area h2#projects::before {
+    content: "🛠️";
+}
+
+.main-content-area h2#hobbies::before {
+    content: "🎯";
+}
+
+.awards-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.awards-item {
+    padding: 6px 12px 6px 4px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.awards-item p {
+    margin: 0;
+    line-height: 1.25;
+}
+
+.awards-item span {
+    line-height: 1.25;
+}
+
+/* Sticky top navigation */
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.top-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav-links a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.top-nav-links a:hover {
+    background-color: #eef2f7;
+    color: #111827;
+}
+
+@media (max-width: 850px) {
+    .top-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    .top-nav-links {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 850px) {
+    .layout-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .profile-avatar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-avatar img {
+        margin: 0 auto;
+    }
+
+    .profile-info-list li,
+    .profile-social-list a {
+        justify-content: center;
+    }
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.section h2 i {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+    background-color: rgba(102, 126, 234, 0.1);
+    margin-right: 0.2rem;
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about-section {
+    background: var(--bg-hero);
+    color: white;
+    margin-top: 2rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.name-title {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+}
+
+.name-chinese {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-left: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.name-chinese {
+    font-size: 1.2rem;
+    color: #718096;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.contact-info {
+    margin: 1.5rem 0;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info i {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    transition: left 0.6s ease;
+}
+
+.social-links a:hover::before {
+    left: 100%;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.social-links a i {
+    font-size: 1.3em;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.bio {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bio strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Footer Motto Styles */
+.footer-motto {
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.motto-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.motto-stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.motto-stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.motto-stars i {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.motto-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.motto-line {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.motto-separator {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.motto-subtitle {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.95rem;
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive for footer motto */
+@media (max-width: 768px) {
+    .footer-motto {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem 0;
+    }
+    
+    .motto-text {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    
+    .motto-line {
+        font-size: 1rem;
+    }
+    
+    .motto-subtitle {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    
+    .motto-separator {
+        display: none;
+    }
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 0;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    object-position: center 28%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Publications */
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.publication-item {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    background: #edf2f7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.publication-item h3 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.publication-item h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.publication-item h3 a:hover {
+    color: #667eea;
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1e40af;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(220, 53, 69, 0.05) 100%);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.pdf-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.pdf-link:hover::before {
+    left: 100%;
+}
+
+.pdf-link:hover {
+    color: #fff;
+    background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);
+    border-color: #dc3545;
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.authors {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.authors strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.venue {
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Education and Experience */
+.education-list,
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.education-entry {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 2rem;
+    align-items: stretch; /* 让子元素高度一致 */
+}
+
+.education-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.education-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 分散内容 */
+}
+
+.edu-institution {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.edu-logo {
+    width: auto;
+    height: 100%;
+    max-width: 80px;
+    min-height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+    border: 3px solid rgba(102, 126, 234, 0.1);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 8px;
+    aspect-ratio: 1;
+    transition: all 0.3s ease;
+}
+
+.edu-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.25);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.edu-degree {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.edu-details {
+    color: #666;
+    flex-grow: 1;
+}
+
+.edu-details p {
+    margin: 0.3rem 0;
+    line-height: 1.6;
+}
+
+/* Experience items */
+.experience-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    background: #edf2f7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.period {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 0.9rem;
+}
+
+.details h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.details p {
+    color: #666;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Awards */
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.award-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.award-item:hover {
+    background: #e2e8f0;
+    transform: translateX(5px);
+}
+
+.award-date {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 0.9rem;
+}
+
+.award-name {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.award-name a {
+    color: #2d3748;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.award-name a:hover {
+    color: #667eea;
+}
+
+.award-org {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Projects */
+.project-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-item {
+    margin-bottom: 0;
+    padding: 4px 0;
+}
+
+.project-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.project-thumb {
+    flex: 0 0 220px;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* 微调：将第二个项目的图片向上移动一点点以修正视觉对齐 */
+.project-list > .project-item:nth-child(2) .project-thumb img {
+    transform: translateY(-10px);
+}
+
+/* 微调：将第三个项目的图片向上移动一点点以修正视觉对齐 */
+.project-list > .project-item:nth-child(3) .project-thumb img {
+    transform: translateY(-4px);
+}
+
+.project-info {
+    flex: 1 1 64%;
+    min-width: 0;
+}
+
+.project-title {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #003366;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    text-decoration: underline;
+}
+
+.project-links-inline {
+    margin-left: 10px;
+    font-size: 0.95em;
+    white-space: nowrap;
+}
+
+.project-keywords {
+    display: block;
+    margin-top: 8px;
+    color: var(--text-secondary);
+}
+
+.project-desc {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+    .project-row {
+        flex-direction: column;
+    }
+
+    .project-thumb {
+        flex: 0 0 auto;
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.project-split {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.project-media {
+    flex: 0 0 320px;
+}
+
+.project-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.project-body h3 {
+    margin-top: 0;
+}
+
+.project-preview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 0;
+}
+
+.project-preview img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    object-position: center;
+    background: var(--bg-secondary);
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 8px var(--shadow-color);
+}
+
+@media (max-width: 720px) {
+    .project-split {
+        flex-direction: column;
+    }
+
+    .project-media {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .project-preview img {
+        height: 240px;
+    }
+}
+
+.project-card {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 10px var(--shadow-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: none;
+}
+
+.project-card:hover::before {
+    transform: none;
+}
+
+.project-card:hover {
+    box-shadow: 0 2px 14px var(--shadow-color);
+    border-color: var(--border-color);
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    color: var(--text-primary);
+}
+
+.project-card h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    color: #667eea;
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    margin-bottom: 0.85rem;
+    line-height: 1.6;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    padding: 0.2rem 0.6rem;
+    background: transparent;
+    color: var(--text-secondary);
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: transparent;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.45rem 0.9rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    border: 1px solid var(--border-color);
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link::before {
+    content: none;
+}
+
+.project-link:hover::before {
+    left: auto;
+}
+
+.project-link:hover {
+    background: transparent;
+    border-color: var(--border-color);
+    transform: none;
+    box-shadow: none;
+}
+
+.project-link i {
+    font-size: 1.1em;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Website Project Styles */
+.website-project {
+    border: 2px solid #667eea;
+    border-radius: 12px;
+    position: relative;
+}
+
+.visit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.visit-link:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.visit-link i {
+    font-size: 0.9em;
+}
+
+.website-link-banner {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #e2e8f0;
+    text-align: center;
+}
+
+.website-banner-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #587896 0%, #365f7f 100%);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(54, 95, 127, 0.24);
+}
+
+.website-banner-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(54, 95, 127, 0.3);
+    background: linear-gradient(135deg, #466d8d 0%, #294f6c 100%);
+}
+
+.website-banner-link i {
+    transition: transform 0.3s ease;
+}
+
+.website-banner-link:hover i {
+    transform: translateX(3px);
+}
+
+/* Footer */
+.footer {
+    margin-top: 4rem;
+    padding: 3rem 2rem 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    color: var(--text-primary);
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seo-keywords {
+    margin-top: 1rem;
+    color: #a0aec0;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+.visitor-counter {
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 1rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-controls {
+        order: -1;
+        margin-right: auto;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .motto {
+        margin-top: 1rem;
+        padding: 0.8rem 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .motto-text {
+        font-size: 0.9rem;
+    }
+    
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .education-entry {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .edu-logo {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .visit-link {
+        margin-left: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .website-banner-link {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .award-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        margin: 2rem 0;
+        padding: 1.5rem;
+    }
+    
+    .name-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .name-title {
+        font-size: 1.8rem;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scroll Animation */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-up {
+    animation: slideInUp 0.8s ease-out;
+}
+
+/* Enhanced Notification Styles */
+.notification {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    color: white;
+    font-weight: 500;
+    z-index: 10000;
+    transform: translateX(120%) scale(0.8);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 350px;
+}
+
+.notification.show {
+    transform: translateX(0) scale(1);
+}
+
+.notification.success {
+    background: linear-gradient(135deg, #587896 0%, #365f7f 100%);
+}
+
+.notification.error {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.notification::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+
+
+
+
+
+/* Zhuang Style Header */
+#layout-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#header_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+#headshot {
+    flex-shrink: 0;
+}
+
+#headshot img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center 28%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#headshot img:hover {
+    transform: scale(1.05);
+}
+
+
+
+#main_info_container {
+    flex: 1;
+}
+
+#main_info_container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pages_post_descr {
+    margin-top: 10px;
+}
+
+.pages_post_descr_main p {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.pages_post_descr_main a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.pages_post_descr_main a:hover {
+    color: #0051A3;
+    text-decoration: underline;
+}
+
+
+
+/* Navigation Menu Hover Effect */
+nav a:hover {
+    background-color: #e3f2fd !important;
+    border-bottom: none !important;
+}
+
+
+
+/* Experience List Styles */
+.xp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.xp-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition: none;
+}
+
+.xp-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.xp-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: #ffffff;
+    padding: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.xp-logo-square {
+    object-fit: contain;
+    object-position: center;
+    padding: 3px;
+}
+
+.xp-logo-fill {
+    object-fit: cover;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.xp-logo-school {
+    padding: 2px;
+}
+
+.xp-meta {
+    flex: 1;
+}
+
+.xp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.xp-org {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.xp-time {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.xp-sub {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.xp-role {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.xp-mentor {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.xp-desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Awards — academic, minimal style */
+.award-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eef1f4;
+}
+
+.award-meta {
+    max-width: calc(100% - 100px);
+}
+
+.award-meta strong {
+    display: block;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.02rem;
+}
+
+.award-sub {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    margin-top: 6px;
+}
+
+.award-year {
+    color: var(--text-light);
+    font-weight: 600;
+    min-width: 80px;
+    text-align: right;
+}
+
+@media (max-width: 720px) {
+    .award-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .award-year {
+        text-align: left;
+        margin-top: 6px;
+    }
+}
+
+/* Muted/gray variant for certain awards */
+.award-item.muted .award-meta strong {
+    color: #666666;
+}
+
+.award-item.muted .award-sub {
+    color: #8a8a8a;
+}
+
+.award-item.muted .award-year {
+    color: #8a8a8a;
+}
+
+/* Featured paper card style (larger thumbnail + prominent title) */
+.paper-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+    padding: 20px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    transition: box-shadow 0.25s ease;
+}
+
+.paper-item:hover {
+    box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+}
+
+.paper-logo {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.paper-item .xp-org {
+    font-weight: 700;
+    font-size: 1.08rem;
+}
+
+.paper-item .xp-desc {
+    font-size: 0.97rem;
+}
+
+@media (max-width: 768px) {
+    .paper-item {
+        flex-direction: column;
+        text-align: left;
+        gap: 12px;
+    }
+
+    .paper-logo {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+    }
+}
+
+/* Mobile responsiveness for experience items */
+@media (max-width: 768px) {
+    #header_container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    #headshot img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #main_info_container h1 {
+        font-size: 2rem;
+    }
+    
+    .xp-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .xp-logo {
+        align-self: center;
+    }
+    
+    .xp-top {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .xp-sub {
+        justify-content: center;
+    }
+}
+
+
+
+/* Adjust body font for Zhuang style */
+body {
+    font-family: Georgia, "Times New Roman", Times, SimSun, "宋体", serif;
+}
+
+
+/* Scroll reveal and compact academic-list styling */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-content-area h2#hobbies::before {
+    content: "🎯";
+}
+
+.awards-list {
+    display: block;
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin: 0.2rem 0 1.4rem;
+}
+
+.awards-item {
+    display: list-item;
+    padding: 0;
+    margin: 0 0 0.35rem;
+    background: transparent;
+    border-radius: 0;
+    color: #2d3748;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.awards-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.hobbies-text {
+    margin: 0.2rem 0 1.4rem;
+    color: #444;
+    line-height: 1.65;
+}
+
+.top-nav-links a.active {
+    color: #003366;
+    border-bottom-color: #003366;
+}
+
+.site-notification {
+    position: fixed;
+    top: 88px;
+    right: 18px;
+    z-index: 2000;
+    max-width: min(320px, calc(100vw - 36px));
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background: #003366;
+    color: #ffffff;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.site-notification.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    list-style: none;
+    margin: 0.25rem 0 1.4rem;
+    padding: 0;
+}
+
+.project-item {
+    margin: 0;
+    padding: 0;
+}
+
+.project-row {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.project-item:last-child .project-row {
+    border-bottom: 0;
+}
+
+.project-thumb {
+    width: 190px;
+    max-width: 190px;
+    min-width: 0;
+}
+
+.project-thumb a {
+    display: block;
+    height: 118px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #f8fafc;
+}
+
+.project-thumb img,
+.project-img-fixed,
+.project-list > .project-item:nth-child(2) .project-thumb img,
+.project-list > .project-item:nth-child(3) .project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    transform: none;
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.project-info p {
+    margin: 0;
+}
+
+.project-title {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.35;
+}
+
+.project-links-inline {
+    margin-left: 0.35rem;
+    white-space: nowrap;
+}
+
+.project-links-inline a,
+.project-links-inline a:visited {
+    color: #1e40af;
+    text-decoration: none;
+}
+
+.project-links-inline a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+.project-keywords {
+    display: block;
+    margin-top: 0.35rem;
+    color: #4b5563;
+    font-size: 0.93rem;
+    line-height: 1.4;
+}
+
+.project-desc {
+    display: block;
+    margin-top: 0.35rem;
+    color: #374151;
+    line-height: 1.48;
+}
+
+@media (max-width: 768px) {
+    .awards-item {
+        white-space: normal;
+    }
+
+    .project-row {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+    }
+
+    .project-thumb {
+        width: 100%;
+        max-width: none;
+    }
+
+    .project-thumb a {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* 2026 content refresh: restrained academic layout and publication tools */
+:root {
+    --bg-hero: #ffffff;
+    --bg-card: #ffffff;
+    --bg-secondary: #f6f8fa;
+    --text-primary: #202830;
+    --text-secondary: #4b5863;
+    --text-light: #74808a;
+    --border-color: #dce2e7;
+    --shadow-color: rgba(31, 43, 53, 0.1);
+    --link-color: #2f678f;
+    --accent-ink: #365f7f;
+    --arxiv-red: #925d66;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-hero);
+    color: var(--text-primary);
+    color-scheme: light;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+::selection {
+    background: #dceaf3;
+    color: #172630;
+}
+
+.scroll-progress {
+    position: fixed;
+    z-index: 11000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #315f81 0%, #67608c 52%, #a35f70 100%);
+    box-shadow: 0 1px 8px rgba(63, 78, 113, 0.28);
+    transform: scaleX(0);
+    transform-origin: left center;
+    will-change: transform;
+}
+
+.layout-wrapper {
+    max-width: 1220px;
+    gap: 38px;
+}
+
+.sidebar,
+.main-content-area,
+.top-nav {
+    background: var(--bg-hero);
+}
+
+.sidebar {
+    padding-right: 30px;
+    border-right: 1px solid #edf0f2;
+}
+
+.profile-avatar {
+    border-color: var(--border-color);
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px var(--shadow-color);
+}
+
+.profile-avatar img {
+    border-radius: 2px;
+    transition: filter 220ms ease, transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.profile-avatar:hover img {
+    filter: contrast(1.04);
+    transform: scale(1.018);
+}
+
+.profile-name,
+.profile-subname,
+.profile-title,
+.profile-org,
+.profile-dept,
+.profile-motto,
+.profile-info-list,
+.profile-social-list {
+    letter-spacing: 0;
+}
+
+.profile-name {
+    color: var(--text-primary);
+    margin-bottom: 0.9rem;
+}
+
+.profile-subname,
+.profile-title,
+.profile-org,
+.profile-dept {
+    color: var(--text-secondary);
+}
+
+.profile-motto {
+    border-left-color: var(--accent-ink);
+    color: var(--text-light);
+}
+
+.profile-location {
+    display: flex;
+    align-items: center;
+    gap: 0.48rem;
+    margin: 0.9rem 0 0.7rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.profile-location i {
+    width: 1rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.profile-icon-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 240px;
+    align-items: center;
+    gap: 0.22rem 0.7rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.profile-icon-link {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    min-width: 0;
+    height: 1.85rem;
+    align-items: center;
+    gap: 0.42rem;
+    color: #46535e !important;
+    font-size: 1.08rem;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 150ms ease, transform 150ms ease;
+}
+
+.profile-icon-link > i,
+.profile-icon-link > img {
+    width: 1.25rem;
+    flex: 0 0 1.25rem;
+    text-align: center;
+}
+
+.profile-link-label {
+    min-width: 0;
+    overflow: hidden;
+    color: #55616b;
+    font: 600 0.76rem/1.15 "Source Sans Pro", sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 150ms ease;
+}
+
+.profile-icon-link:hover,
+.profile-icon-link:focus-visible {
+    color: var(--accent-ink) !important;
+    text-decoration: none;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.profile-icon-link:hover .profile-link-label,
+.profile-icon-link:focus-visible .profile-link-label {
+    color: var(--accent-ink);
+}
+
+.profile-icon-link--scholar,
+.profile-icon-link--orcid {
+    font-size: 1.35rem;
+}
+
+.profile-icon-link--openreview img {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.xiaohongshu-icon {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    object-fit: contain;
+    opacity: 0.78;
+    transition: opacity 150ms ease;
+}
+
+.profile-icon-link--xiaohongshu:hover,
+.profile-icon-link--xiaohongshu:focus-visible {
+    color: #ff4f62 !important;
+}
+
+.profile-icon-link--xiaohongshu:hover .xiaohongshu-icon,
+.profile-icon-link--xiaohongshu:focus-visible .xiaohongshu-icon {
+    opacity: 1;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.main-content-area p,
+.main-content-area li {
+    color: var(--text-secondary) !important;
+    font-size: 1rem;
+    line-height: 1.68;
+}
+
+.welcome-intro {
+    padding: 1.65rem 0 0.25rem;
+}
+
+.welcome-intro h1 {
+    margin: 0;
+    color: var(--text-primary);
+    font-family: "Permanent Marker", "Comic Sans MS", cursive;
+    font-size: 2.15rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.welcome-intro h1 span {
+    background: linear-gradient(115deg, #315f81 10%, #6a608c 55%, #a15f70 100%);
+    background-clip: text;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-content-area .welcome-intro p {
+    margin: 0.28rem 0 0;
+    color: var(--text-light) !important;
+    font-size: 0.94rem;
+}
+
+.main-content-area .availability-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.62rem;
+    margin: 0.78rem 0 1.1rem;
+    padding: 0.62rem 0.78rem;
+    border-left: 2px solid #8f6172;
+    background: linear-gradient(90deg, rgba(143, 97, 114, 0.075), rgba(53, 96, 128, 0.025) 64%, transparent);
+    color: #44515c !important;
+    font-size: 0.94rem;
+    line-height: 1.52;
+}
+
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 8px;
+    margin-top: 0.43rem;
+    border-radius: 50%;
+    background: #9b6170;
+    box-shadow: 0 0 0 0 rgba(155, 97, 112, 0.28);
+    animation: availability-pulse 2.4s ease-out infinite;
+}
+
+@keyframes availability-pulse {
+    0%, 45% { box-shadow: 0 0 0 0 rgba(155, 97, 112, 0.28); }
+    75%, 100% { box-shadow: 0 0 0 7px rgba(155, 97, 112, 0); }
+}
+
+.main-content-area h2 {
+    margin: 1.45rem 0 0.72rem;
+    padding: 0 0 0 0.72rem;
+    border-left: 3px solid;
+    border-image: linear-gradient(180deg, #315f81, #756387, #a15f70) 1;
+    color: var(--text-primary) !important;
+    font-family: "Crimson Text", Georgia, serif;
+    font-size: 1.72rem;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+.main-content-area h2::before,
+.main-content-area h2#biography::before,
+.main-content-area h2#news::before,
+.main-content-area h2#publications::before,
+.main-content-area h2#education::before,
+.main-content-area h2#experience::before,
+.main-content-area h2#awards::before,
+.main-content-area h2#projects::before,
+.main-content-area h2#hobbies::before {
+    content: none;
+}
+
+.main-content-area a,
+.profile-info-list a,
+.profile-social-list a {
+    color: var(--link-color) !important;
+    text-underline-offset: 0.16em;
+    transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.main-content-area a:hover,
+.main-content-area a:focus-visible {
+    color: #234f6d !important;
+    text-decoration-color: #8cabbf;
+}
+
+.top-nav {
+    border-color: #dbe2e7;
+    background: rgba(252, 253, 254, 0.96);
+    box-shadow: 0 4px 16px rgba(31, 43, 53, 0.055);
+    backdrop-filter: blur(12px);
+}
+
+.top-nav-links a {
+    color: #53616d !important;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    padding: 5px 4px;
+    transition: color 150ms ease, border-color 150ms ease;
+}
+
+.top-nav-links a:hover,
+.top-nav-links a.active {
+    color: var(--text-primary) !important;
+    border-bottom-color: var(--accent-ink) !important;
+    text-shadow: 0 0 18px rgba(54, 95, 127, 0.14);
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.2rem 0 1.25rem;
+}
+
+.news-list li {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 0.65rem;
+    align-items: start;
+    margin-bottom: 0.58rem;
+}
+
+.news-list time {
+    color: #1f252b;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+}
+
+.publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.15rem 0 1.6rem;
+}
+
+.publication-entry {
+    display: grid;
+    grid-template-columns: minmax(250px, 36%) minmax(0, 1fr);
+    gap: 1.1rem;
+    align-items: start;
+    margin: 0 -0.6rem;
+    padding: 1rem 0.6rem;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: background-color 160ms ease;
+}
+
+.publication-entry:first-child {
+    padding-top: 0.55rem;
+}
+
+.publication-entry:hover {
+    background: #fbfcfd;
+}
+
+.publication-entry:last-child {
+    border-bottom: 0;
+}
+
+.publication-media {
+    position: relative;
+    display: flex;
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #d5dde2;
+    border-radius: 6px;
+    background: #ffffff;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.publication-media::after {
+    position: absolute;
+    z-index: 1;
+    top: -35%;
+    bottom: -35%;
+    left: -45%;
+    width: 28%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.72), transparent);
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    transform: skewX(-16deg);
+}
+
+.publication-media:hover,
+.publication-media:focus-visible {
+    border-color: #aebdca;
+    box-shadow: 0 7px 18px rgba(31, 43, 53, 0.1);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+.publication-media:hover::after,
+.publication-media:focus-visible::after {
+    animation: paper-shine 0.72s ease-out;
+}
+
+@keyframes paper-shine {
+    0% { left: -45%; opacity: 0; }
+    18% { opacity: 0.72; }
+    100% { left: 120%; opacity: 0; }
+}
+
+.venue-badge {
+    position: absolute;
+    z-index: 2;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: inline-flex;
+    min-height: 24px;
+    align-items: center;
+    padding: 0.22rem 0.48rem;
+    gap: 0.34rem;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 3px;
+    background: linear-gradient(135deg, rgba(48, 86, 115, 0.96), rgba(70, 103, 128, 0.93));
+    color: #ffffff !important;
+    font: 700 0.7rem/1 "Source Sans Pro", sans-serif;
+    letter-spacing: 0;
+    box-shadow: 0 2px 9px rgba(20, 31, 40, 0.22);
+    backdrop-filter: blur(6px);
+}
+
+.venue-badge::before {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    content: "";
+    opacity: 0.8;
+}
+
+.venue-badge--preprint {
+    background: linear-gradient(135deg, rgba(132, 73, 85, 0.96), rgba(158, 94, 103, 0.93));
+}
+
+.venue-badge--journal {
+    background: linear-gradient(135deg, rgba(44, 85, 114, 0.96), rgba(65, 111, 139, 0.93));
+}
+
+.venue-badge--conference {
+    background: linear-gradient(135deg, rgba(81, 73, 111, 0.96), rgba(108, 92, 132, 0.93));
+}
+
+.publication-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.publication-content {
+    min-width: 0;
+}
+
+.main-content-area .paper-title {
+    display: block;
+    color: var(--text-primary) !important;
+    font-family: "Crimson Text", Georgia, serif;
+    font-size: 1.24rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0;
+}
+
+.main-content-area .paper-authors,
+.main-content-area .paper-notes,
+.main-content-area .paper-venue {
+    display: block;
+    color: var(--text-secondary) !important;
+}
+
+.main-content-area .paper-authors {
+    margin-top: 0.52rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.main-content-area .paper-authors b {
+    color: #2c4050;
+}
+
+.main-content-area .paper-notes {
+    margin-top: 0.16rem;
+    color: var(--text-light) !important;
+    font-size: 0.86rem;
+    line-height: 1.35;
+}
+
+.main-content-area .paper-venue {
+    margin-top: 0.4rem;
+    color: #65727c !important;
+    font-size: 0.92rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.paper-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+    margin-top: 0.65rem;
+}
+
+.main-content-area .paper-action {
+    display: inline-flex;
+    min-height: 30px;
+    align-items: center;
+    gap: 0.36rem;
+    padding: 0.28rem 0.58rem;
+    border: 1px solid #cbd4da;
+    border-radius: 5px;
+    background: #f5f7f9;
+    color: #374650 !important;
+    font: 600 0.82rem/1 "Source Sans Pro", sans-serif;
+    letter-spacing: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.main-content-area .paper-action i {
+    color: inherit !important;
+    font-size: 0.95rem;
+}
+
+.main-content-area .paper-action:hover,
+.main-content-area .paper-action:focus-visible {
+    border-color: #9facb5;
+    background: #f1f4f6;
+    color: #17222b !important;
+    outline: none;
+}
+
+.main-content-area .paper-action-arxiv {
+    border-color: #dec3c8;
+    background: #fbf4f5;
+    color: var(--arxiv-red) !important;
+}
+
+.main-content-area .paper-action-arxiv:hover,
+.main-content-area .paper-action-arxiv:focus-visible {
+    border-color: #bd858e;
+    background: #f6e9eb;
+    color: #7f4750 !important;
+}
+
+.main-content-area .paper-action-alphaxiv {
+    border-color: #d2d8dc;
+    background: #f7f8f9;
+    color: #495861 !important;
+}
+
+.main-content-area .paper-action-alphaxiv:hover,
+.main-content-area .paper-action-alphaxiv:focus-visible {
+    border-color: #aeb9c0;
+    background: #f0f3f5;
+    color: #25343d !important;
+}
+
+.alphaxiv-label {
+    font-weight: 700;
+}
+
+.alphaxiv-like {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding-left: 0.38rem;
+    border-left: 1px solid #c9d1d6;
+    color: #6a7881;
+    font-variant-numeric: tabular-nums;
+}
+
+.main-content-area .paper-action-alphaxiv:hover .alphaxiv-like,
+.main-content-area .paper-action-alphaxiv:focus-visible .alphaxiv-like {
+    color: inherit;
+}
+
+.main-content-area .paper-action-code {
+    border-color: #cfd5da;
+    background: #f4f5f6;
+    color: #333c44 !important;
+}
+
+.main-content-area .paper-action-pdf {
+    border-color: #dcc5c5;
+    background: #faf4f4;
+    color: #8c5558 !important;
+}
+
+.main-content-area .paper-action-doi {
+    border-color: #c5d5df;
+    background: #f1f6f9;
+    color: #35647f !important;
+}
+
+.main-content-area .paper-action.bib-toggle {
+    border-color: #d2ccda;
+    background: #f6f4f8;
+    color: #625a76 !important;
+}
+
+.main-content-area .paper-action-code:hover,
+.main-content-area .paper-action-code:focus-visible,
+.main-content-area .paper-action-pdf:hover,
+.main-content-area .paper-action-pdf:focus-visible,
+.main-content-area .paper-action-doi:hover,
+.main-content-area .paper-action-doi:focus-visible,
+.main-content-area .paper-action.bib-toggle:hover,
+.main-content-area .paper-action.bib-toggle:focus-visible {
+    filter: brightness(0.97);
+}
+
+.repo-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.22rem;
+    margin-left: 0.08rem;
+    padding-left: 0.42rem;
+    border-left: 1px solid #c6ced4;
+    color: #68747d;
+    font-variant-numeric: tabular-nums;
+}
+
+.main-content-area .repo-stars i {
+    color: inherit !important;
+    font-size: 0.72rem;
+}
+
+.repo-star-count {
+    min-width: 0.55rem;
+}
+
+.bibtex-panel {
+    position: relative;
+    margin-top: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-ink);
+    border-radius: 5px;
+    background: #f6f8f9;
+}
+
+.bibtex-panel[hidden] {
+    display: none;
+}
+
+.bibtex-panel pre {
+    max-width: 100%;
+    margin: 0;
+    padding: 2.5rem 0.8rem 0.8rem;
+    overflow-x: auto;
+    color: #2f3c46;
+    font: 0.78rem/1.52 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    white-space: pre;
+}
+
+.copy-bib {
+    position: absolute;
+    top: 0.45rem;
+    right: 0.45rem;
+    display: inline-flex;
+    min-height: 27px;
+    align-items: center;
+    gap: 0.32rem;
+    padding: 0.22rem 0.48rem;
+    border: 1px solid #cbd4da;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #3f4c56;
+    font: 600 0.76rem/1 "Source Sans Pro", sans-serif;
+    cursor: pointer;
+}
+
+.copy-bib:hover,
+.copy-bib:focus-visible {
+    border-color: var(--accent-ink);
+    color: #1d2730;
+    outline: none;
+}
+
+.xp-item {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 0 1rem;
+    transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.xp-item:hover {
+    border-bottom-color: #b9cbd7;
+    transform: translateX(3px);
+}
+
+.xp-item:last-child {
+    border-bottom: 0;
+}
+
+.main-content-area .xp-time {
+    color: var(--accent-ink) !important;
+    font-variant-numeric: tabular-nums;
+}
+
+.site-notification,
+#back-to-top {
+    background: linear-gradient(135deg, #315f81, #625f87 58%, #955d6d) !important;
+    color: #ffffff !important;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.68s ease, transform 0.68s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-item {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.52s ease, transform 0.52s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+    .layout-wrapper {
+        margin-top: 18px;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .sidebar {
+        padding-right: 0;
+        padding-bottom: 1.4rem;
+        border-right: 0;
+        border-bottom: 1px solid #edf0f2;
+        margin-bottom: 18px;
+    }
+
+    .main-content-area {
+        width: 100%;
+    }
+
+    .profile-motto {
+        width: min(340px, calc(100% - 24px));
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+    }
+
+    .profile-location {
+        justify-content: center;
+    }
+
+    .profile-icon-links {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .top-nav {
+        overflow-x: auto;
+        padding: 7px 10px;
+        scrollbar-width: none;
+    }
+
+    .top-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .top-nav-links {
+        width: max-content;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 1.1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-content-area p,
+    .main-content-area li {
+        font-size: 0.98rem;
+        line-height: 1.62;
+    }
+
+    .welcome-intro {
+        padding-top: 1.35rem;
+    }
+
+    .welcome-intro h1 {
+        font-size: 1.72rem;
+    }
+
+    .main-content-area .welcome-intro p {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .news-list li {
+        grid-template-columns: 1fr;
+        gap: 0.05rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .news-list li > span:last-child {
+        grid-column: 1;
+    }
+
+    .publication-entry {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin: 0;
+        padding: 1rem 0;
+        border-radius: 0;
+    }
+
+    .publication-media {
+        aspect-ratio: 16 / 8;
+    }
+
+    .main-content-area .paper-title {
+        font-size: 1.18rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal,
+    .reveal-item {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&amp;family=Permanent+Marker&amp;family=Source+Sans+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css">
+    <script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+    
+    <!-- JSON-LD structured data for search engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://mamingyu0829.github.io/#person",
+      "name": "Mingyu Ma",
+      "url": "https://mamingyu0829.github.io/",
+      "image": "https://mamingyu0829.github.io/image.png",
+      "sameAs": [
+        "https://github.com/HaoyunT",
+        "https://orcid.org/0009-0001-6493-2806"
+      ],
+      "jobTitle": "M.S. Student",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Xi'an Jiaotong University",
+        "department": "School of Mathematics and Statistics"
+      },
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "Xinjiang University"
+      },
+            "knowsAbout": [
+                "World Action Models",
+                "Embodied Intelligence",
+                "Reinforcement Learning",
+                "Diffusion Models",
+                "Spatial Intelligence",
+                "Flow Matching",
+                "Autonomous Driving",
+                "Decision and Planning",
+                "Motion Planning",
+                "Multi-Agent Reinforcement Learning"
+            ],
+      "email": "mingyuma0829@163.com",
+            "description": "M.S. student in Applied Mathematics at Xi'an Jiaotong University researching world action models, reinforcement learning, and embodied intelligence."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": "https://mamingyu0829.github.io/#profile-page",
+      "url": "https://mamingyu0829.github.io/",
+      "name": "Mingyu Ma | Academic Homepage",
+      "thumbnailUrl": "https://mamingyu0829.github.io/image.png?v=20260824c",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://mamingyu0829.github.io/#profile-image",
+        "url": "https://mamingyu0829.github.io/image.png?v=20260824c",
+        "contentUrl": "https://mamingyu0829.github.io/image.png?v=20260824c",
+        "width": 987,
+        "height": 984,
+        "caption": "Illustrated avatar of Mingyu Ma"
+      },
+      "mainEntity": {
+        "@id": "https://mamingyu0829.github.io/#person"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="container layout-wrapper">
+        <aside class="sidebar">
+            <div class="profile-avatar">
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23315f81%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23a15f70%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3E%E9%A9%AC%E6%98%8E%E7%91%9C%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Mingyu Ma profile avatar" width="800" height="450" fetchpriority="high" itemprop="image">
+            </div>
+            <div class="profile-name">Mingyu Ma</div>
+            <div class="profile-title">M.S. Student</div>
+            <div class="profile-org">School of Mathematics and Statistics</div>
+            <div class="profile-dept">Northwestern Polytechnical University</div>
+            <div class="profile-motto">"From mathematical structure to intelligent decisions."</div>
+            <div class="profile-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Xi'an, China</div>
+            <div class="profile-icon-links" aria-label="Profiles and contact links">
+                <a class="profile-icon-link" href="mailto:mingyuma0829@163.com" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="profile-link-label">Email</span></a>
+                <a class="profile-icon-link" href="#education" aria-label="Curriculum Vitae" title="Education"><i class="fas fa-file-pdf" aria-hidden="true"></i><span class="profile-link-label">CV</span></a>
+                <a class="profile-icon-link profile-icon-link--scholar" href="#publications" aria-label="Publications" title="Publications"><i class="ai ai-google-scholar" aria-hidden="true"></i><span class="profile-link-label">Scholar</span></a>
+                <a class="profile-icon-link" href="https://github.com/mamingyu0829" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="profile-link-label">GitHub</span></a>
+                <a class="profile-icon-link" href="#experience" aria-label="Research" title="Research"><i class="fas fa-book-open" aria-hidden="true"></i><span class="profile-link-label">Research</span></a>
+                <a class="profile-icon-link profile-icon-link--orcid" href="#awards" aria-label="Awards" title="Awards"><i class="ai ai-orcid" aria-hidden="true"></i><span class="profile-link-label">Awards</span></a>
+            </div>
+        </aside>
+
+        <div class="main-content-area">
+            <div class="top-nav">
+                <nav class="top-nav-links">
+                    <a href="#biography">About</a>
+                    <a href="#news">News</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#awards">Awards</a>
+                    <a href="#projects">Projects</a>
+                </nav>
+            </div>
+            <header class="welcome-intro">
+                <h1><span>Hi,</span> welcome to my homepage.</h1>
+            </header>
+            <div class="availability-note"><span class="availability-dot" aria-hidden="true"></span><span>Open to research discussions and collaboration in game theory, reinforcement learning, and game optimization.</span></div>
+
+            <h2 id="biography">Biography</h2>
+            <p>I am an M.S. student at the <b>School of Mathematics and Statistics, Northwestern Polytechnical University</b>. My research interests include <b>Game Theory</b>, <b>Reinforcement Learning</b>, and <b>Game Optimization</b>.</p>
+            <p>I completed my undergraduate studies at the <b>School of Mathematics and System Science, Xinjiang University</b>, where I ranked in the top 5% academically and was recognized as an Outstanding Graduate.</p>
+            <p>My work connects mathematical modeling with intelligent decision-making. I study strategic interaction, learning dynamics, and optimization methods for multi-agent systems.</p>
+            <p>I welcome research discussions and academic collaboration; feel free to reach me by <a href="mailto:mingyuma0829@163.com">e-mail</a>.</p>
+
+            <h2 id="news">News</h2>
+            <ul class="news-list">
+                <li><time datetime="2026">[2026]</time><span>🎉 Received the <b>National Scholarship</b> for outstanding academic performance and research development.</span></li>
+                <li><time datetime="2026-09">[2026/09]</time><span>Started M.S. study at the <b>Northwestern Polytechnical University</b>.</span></li>
+                <li><time datetime="2025">[2025]</time><span>🎉 Paper on bench-dragon motion-state simulation was accepted by <b>IPIIS 2025</b>.</span></li>
+                <li><time datetime="2025">[2025]</time><span>🎉 Paper on adaptive passivity-based synchronization was accepted by <b>CISC 2025</b>.</span></li>
+                <li><time datetime="2026">[2026]</time><span>Paper on spatial sampling-based synchronization appeared in <b>CNSNS</b>.</span></li>
+            </ul>
+
+            <h2 id="publications">Selected Publications</h2>
+            <ul class="publication-list">
+                <li class="publication-entry">
+                    <a class="publication-media" href="https://doi.org/10.1016/j.cnsns.2026.109666" target="_blank" rel="noopener"><span class="venue-badge venue-badge--journal">CNSNS 2026</span><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23315f81%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235f7f9b%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EGAME%20THEORY%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Game theory and neural network synchronization illustration"></a>
+                    <div class="publication-content"><span class="paper-title">Spatial Sampling-based Passivity and Synchronization of Multiweighted Coupled Reaction-diffusion Neural Networks</span><span class="paper-authors">Haodong Cui, Haoyun Tang, <b>Mingyu Ma</b>, Cheng Hu†, Tingting Shi</span><span class="paper-notes">† Corresponding author.</span><span class="paper-venue">Communications in Nonlinear Science and Numerical Simulation, 2026</span><div class="paper-actions"><a class="paper-action paper-action-doi" href="https://doi.org/10.1016/j.cnsns.2026.109666" target="_blank" rel="noopener"><i class="fas fa-link" aria-hidden="true"></i> DOI</a><button class="paper-action bib-toggle" type="button" aria-expanded="false" aria-controls="bib-spatial"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</button></div><div class="bibtex-panel" id="bib-spatial" hidden><button class="copy-bib" type="button" aria-label="Copy spatial paper BibTeX"><i class="far fa-copy" aria-hidden="true"></i> Copy</button><pre><code>@article{cui2026spatial,
+  title={Spatial Sampling-based Passivity and Synchronization of Multiweighted Coupled Reaction-diffusion Neural Networks},
+  author={Cui, Haodong and Tang, Haoyun and Ma, Mingyu and Hu, Cheng and Shi, Tingting},
+  journal={Communications in Nonlinear Science and Numerical Simulation},
+  year={2026},
+  doi={10.1016/j.cnsns.2026.109666}
+}</code></pre></div></div>
+                </li>
+                <li class="publication-entry">
+                    <a class="publication-media" href="mailto:mingyuma0829@163.com" target="_blank" rel="noopener"><span class="venue-badge venue-badge--conference">CISC 2025</span><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23665e8c%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238b6a9c%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EREINFORCEMENT%20LEARNING%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Reinforcement learning illustration"></a>
+                    <div class="publication-content"><span class="paper-title">Adaptive Passivity-based Synchronization of Spatiotemporal Neural Networks with Multi-weighted Coupling under Spatially Point Measurements</span><span class="paper-authors">Haoyun Tang, Haodong Cui, <b>Mingyu Ma</b>, Cheng Hu†, Tingting Shi</span><span class="paper-notes">† Corresponding author.</span><span class="paper-venue">Chinese Intelligent Systems Conference (CISC 2025), 2026</span><div class="paper-actions"><a class="paper-action paper-action-pdf" href="mailto:mingyuma0829@163.com"><i class="far fa-file-pdf" aria-hidden="true"></i> Acceptance</a><a class="paper-action paper-action-doi" href="https://doi.org/10.1007/978-981-95-6813-0_26" target="_blank" rel="noopener"><i class="fas fa-link" aria-hidden="true"></i> DOI</a><button class="paper-action bib-toggle" type="button" aria-expanded="false" aria-controls="bib-cisc"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</button></div><div class="bibtex-panel" id="bib-cisc" hidden><button class="copy-bib" type="button" aria-label="Copy CISC paper BibTeX"><i class="far fa-copy" aria-hidden="true"></i> Copy</button><pre><code>@inproceedings{ma2025adaptive,
+  title={Adaptive Passivity-based Synchronization of Spatiotemporal Neural Networks with Multi-weighted Coupling under Spatially Point Measurements},
+  author={Tang, Haoyun and Cui, Haodong and Ma, Mingyu and Hu, Cheng and Shi, Tingting},
+  booktitle={Chinese Intelligent Systems Conference},
+  year={2025}
+}</code></pre></div></div>
+                </li>
+                <li class="publication-entry">
+                    <a class="publication-media" href="mailto:mingyuma0829@163.com" target="_blank" rel="noopener"><span class="venue-badge venue-badge--conference">IPIIS 2025</span><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%238a5e71%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23b07a86%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EMATHEMATICAL%20MODELING%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Mathematical modeling illustration"></a>
+                    <div class="publication-content"><span class="paper-title">Research on Simulation of Multi-node Motion States of the Bench Dragon Based on Archimedean Spiral and ode45 Algorithm</span><span class="paper-authors"><b>Mingyu Ma</b> et al.</span><span class="paper-notes">Accepted paper.</span><span class="paper-venue">International Conference on Intelligent Planning and Information Interaction Systems (IPIIS 2025)</span><div class="paper-actions"><a class="paper-action paper-action-pdf" href="mailto:mingyuma0829@163.com"><i class="far fa-file-pdf" aria-hidden="true"></i> Acceptance</a><button class="paper-action bib-toggle" type="button" aria-expanded="false" aria-controls="bib-ipiis"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</button></div><div class="bibtex-panel" id="bib-ipiis" hidden><button class="copy-bib" type="button" aria-label="Copy IPIIS paper BibTeX"><i class="far fa-copy" aria-hidden="true"></i> Copy</button><pre><code>@inproceedings{ma2025bench,
+  title={Research on Simulation of Multi-node Motion States of the Bench Dragon Based on Archimedean Spiral and ode45 Algorithm},
+  author={Ma, Mingyu and others},
+  booktitle={IPIIS 2025},
+  year={2025}
+}</code></pre></div></div>
+                </li>
+            </ul>
+
+            <h2 id="education">Education</h2>
+            <ul class="xp-list">
+                <li class="xp-item"><img class="xp-logo xp-logo-school" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23365f7f%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23708ba1%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3ENWPU%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Northwestern Polytechnical University" loading="lazy" decoding="async"><div class="xp-meta"><div class="xp-top"><span class="xp-org">Northwestern Polytechnical University</span><span class="xp-time">2026.09 – Present</span></div><div class="xp-sub"><span class="xp-role">M.S. Student</span><span class="xp-mentor">School of Mathematics and Statistics · Xi'an</span></div><div class="xp-desc">M.S. research focus: Game Theory, Reinforcement Learning, and Game Optimization.</div></div></li>
+                <li class="xp-item"><img class="xp-logo xp-logo-school" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%236d607f%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%239d7287%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EXJU%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Xinjiang University" loading="lazy" decoding="async"><div class="xp-meta"><div class="xp-top"><span class="xp-org">Xinjiang University</span><span class="xp-time">2022.09 – 2026.06</span></div><div class="xp-sub"><span class="xp-role">Undergraduate Student</span><span class="xp-mentor">School of Mathematics and System Science · Xinjiang</span></div><div class="xp-desc">B.S. in Mathematics and Applied Mathematics. Outstanding Graduate. Academic standing: Top 5%.</div></div></li>
+            </ul>
+
+            <h2 id="experience">Research Experience</h2>
+            <ul class="xp-list">
+                <li class="xp-item"><img class="xp-logo xp-logo-square" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23315f81%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235f7f9b%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EGAME%20THEORY%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Game theory research" loading="lazy" decoding="async"><div class="xp-meta"><div class="xp-top"><span class="xp-org">Independent Mathematical Research</span><span class="xp-time">2024 – Present</span></div><div class="xp-sub"><span class="xp-role">Student Researcher</span><span class="xp-mentor">China</span></div><div class="xp-desc">Studying strategic interaction, learning dynamics, and optimization models with applications to multi-agent systems and intelligent control.</div></div></li>
+                <li class="xp-item"><img class="xp-logo xp-logo-square" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23665e8c%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238b6a9c%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EREINFORCEMENT%20LEARNING%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Reinforcement learning research" loading="lazy" decoding="async"><div class="xp-meta"><div class="xp-top"><span class="xp-org">Neural Network Synchronization Projects</span><span class="xp-time">2023 – 2026</span></div><div class="xp-sub"><span class="xp-role">Undergraduate Researcher</span><span class="xp-mentor">Xinjiang University</span></div><div class="xp-desc">Worked on passivity-based synchronization, spatial sampling, multi-weighted coupling, and mathematical modeling of complex systems.</div></div></li>
+            </ul>
+
+            <h2 id="awards">Selected Awards &amp; Honors</h2>
+            <ul class="awards-list">
+                <li class="awards-item"><b>National Scholarship</b>, Ministry of Education of the P.R.C., 2026</li>
+                <li class="awards-item"><b>National Silver Award</b>, China International College Students Innovation Competition (Internet+), 2023</li>
+                <li class="awards-item"><b>National Third Prize</b>, National College Student Mathematics Competition (Mathematics A), 2024</li>
+                <li class="awards-item"><b>National Third Prize</b>, “Chia Tai Cup” National College Student Market Research and Analysis Competition, 2024</li>
+                <li class="awards-item"><b>Provincial Special Prize</b>, China Undergraduate Mathematical Contest in Modeling, Xinjiang Division, 2024</li>
+            </ul>
+
+            <h2 id="projects">Selected Projects</h2>
+            <ul class="project-list">
+                <li class="project-item"><div class="project-row"><div class="project-thumb"><a href="#publications"><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23315f81%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%239b6170%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EGAME%20OPTIMIZATION%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Game optimization research project" loading="lazy" decoding="async" class="project-img-fixed"></a></div><div class="project-info"><p><span class="project-title">Game Optimization for Multi-agent Decision Making</span><span class="project-links-inline">[<a href="#publications">Research</a>]</span><span class="project-keywords"><i>Keywords: Game Theory, Optimization, Multi-agent Learning</i></span><span class="project-desc">Exploring optimization formulations and learning-based methods for strategic decision-making in multi-agent systems.</span></p></div></div></li>
+                <li class="project-item"><div class="project-row"><div class="project-thumb"><a href="#publications"><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23665e8c%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238b6a9c%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EREINFORCEMENT%20LEARNING%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adaptive synchronization project" loading="lazy" decoding="async" class="project-img-fixed"></a></div><div class="project-info"><p><span class="project-title">Adaptive Synchronization of Complex Neural Networks</span><span class="project-links-inline">[<a href="#publications">Paper</a>]</span><span class="project-keywords"><i>Keywords: Passivity, Spatial Sampling, Complex Networks</i></span><span class="project-desc">Developed mathematical models for synchronization under spatially point measurements and multi-weighted coupling.</span></p></div></div></li>
+                <li class="project-item"><div class="project-row"><div class="project-thumb"><a href="#publications"><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20450%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%238a5e71%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23b07a86%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22450%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22660%22%20cy%3D%2295%22%20r%3D%22120%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.12%22%2F%3E%3Cpath%20d%3D%22M0%20360%20Q180%20250%20360%20360%20T800%20320%20V450%20H0Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.1%22%2F%3E%3Ctext%20x%3D%2252%22%20y%3D%22238%22%20fill%3D%22%23fff%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22600%22%3EMATHEMATICAL%20MODELING%3C%2Ftext%3E%3Ctext%20x%3D%2255%22%20y%3D%22280%22%20fill%3D%22%23dceaf3%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%3EMINGYU%20MA%20%C2%B7%20RESEARCH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Bench dragon motion simulation project" loading="lazy" decoding="async" class="project-img-fixed"></a></div><div class="project-info"><p><span class="project-title">Bench Dragon Motion Simulation</span><span class="project-links-inline">[<a href="#publications">Paper</a>]</span><span class="project-keywords"><i>Keywords: Archimedean Spiral, ode45, Mathematical Modeling</i></span><span class="project-desc">Simulated multi-node motion states using an Archimedean spiral model and the ode45 numerical integration algorithm.</span></p></div></div></li>
+            </ul>
+
+            <h2 id="hobbies">Hobbies &amp; Interests</h2>
+            <p class="hobbies-text">Beyond my current projects, I enjoy reading mathematical ideas and exploring how game-theoretic models can support intelligent decision-making.</p>
+            <div id="footer"><div id="footer-text" style="float: none !important; text-align: center; margin-top: 30px; padding: 25px 0; border-top: 1px solid #e0e0e0; width: 100%;"><p style="color: #666; font-size: 0.9em; margin: 10px 0;">© 2026 Mingyu Ma | Last updated: October 2026</p><div id="page-stats" style="margin-top:12px; color:#666; font-size:0.95em;">This page has been viewed <span id="busuanzi_page_pv">Loading...</span> times. Total site visitors: <span id="busuanzi_site_uv">Loading...</span>. Today's site visitors: <span id="busuanzi_today_uv">Loading...</span>.</div></div></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a id="back-to-top" href="#" aria-label="Back to top" style="opacity:0; pointer-events:none; position: fixed; bottom: 30px; right: 30px; color: white; width: 50px; height: 50px; text-align: center; line-height: 50px; border-radius: 50%; font-size: 20px; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: opacity 0.3s, transform 0.3s; z-index: 1000;">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mainArea = document.querySelector('.main-content-area');
+    const scrollProgress = document.querySelector('.scroll-progress');
+
+    function updateScrollProgress() {
+        if (!scrollProgress) {
+            return;
+        }
+
+        const scrollRange = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollRange > 0 ? Math.min(window.scrollY / scrollRange, 1) : 0;
+        scrollProgress.style.transform = `scaleX(${progress})`;
+    }
+
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
+    window.addEventListener('resize', updateScrollProgress);
+    updateScrollProgress();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(event) {
+            const href = this.getAttribute('href');
+            if (href === '#') {
+                return;
+            }
+
+            const target = document.querySelector(href);
+            if (target) {
+                event.preventDefault();
+                const headerOffset = 80;
+                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: targetTop, behavior: 'smooth' });
+            }
+        });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    if (mainArea) {
+        const revealTargets = [];
+        let currentGroup = null;
+
+        Array.from(mainArea.children).forEach(child => {
+            if (child.classList.contains('top-nav') || child.id === 'footer') {
+                return;
+            }
+
+            if (child.tagName === 'H2') {
+                currentGroup = document.createElement('div');
+                currentGroup.className = 'scroll-reveal';
+                mainArea.insertBefore(currentGroup, child);
+                revealTargets.push(currentGroup);
+            }
+
+            if (currentGroup) {
+                currentGroup.appendChild(child);
+            }
+        });
+
+        const itemSelectors = [
+            '.news-list li',
+            '.publication-entry',
+            '.xp-item',
+            '.awards-item',
+            '.project-item'
+        ];
+
+        const itemTargets = Array.from(mainArea.querySelectorAll(itemSelectors.join(',')));
+
+        itemTargets.forEach((item, index) => {
+            item.classList.add('reveal-item');
+            item.style.setProperty('--reveal-delay', `${(index % 5) * 65}ms`);
+        });
+
+        const allRevealTargets = [...revealTargets, ...itemTargets];
+        allRevealTargets.forEach(target => observer.observe(target));
+
+        function revealVisibleTargets() {
+            const revealLine = window.innerHeight * 0.92;
+
+            allRevealTargets.forEach(target => {
+                if (target.classList.contains('visible')) {
+                    return;
+                }
+
+                const rect = target.getBoundingClientRect();
+                if (rect.top <= revealLine && rect.bottom >= 0) {
+                    target.classList.add('visible');
+                    observer.unobserve(target);
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealVisibleTargets, { passive: true });
+        window.addEventListener('resize', revealVisibleTargets);
+        revealVisibleTargets();
+    }
+
+    const navLinks = document.querySelectorAll('.top-nav-links a');
+    const sectionHeadings = document.querySelectorAll('.main-content-area h2[id]');
+
+    function updateActiveNav() {
+        let current = '';
+
+        sectionHeadings.forEach(heading => {
+            if (window.pageYOffset >= heading.offsetTop - 140) {
+                current = heading.id;
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
+    document.querySelectorAll('.bib-toggle').forEach(button => {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (!panel) {
+            return;
+        }
+
+        button.addEventListener('click', function() {
+            const willOpen = panel.hidden;
+            panel.hidden = !willOpen;
+            button.setAttribute('aria-expanded', String(willOpen));
+        });
+    });
+
+    document.querySelectorAll('.copy-bib').forEach(button => {
+        button.addEventListener('click', function() {
+            const code = button.parentElement.querySelector('code');
+            if (code) {
+                copyText(code.textContent.trim(), 'BibTeX copied to clipboard.');
+            }
+        });
+    });
+
+    document.querySelectorAll('[data-github-repo]').forEach(link => {
+        const repository = link.dataset.githubRepo;
+        const stars = link.querySelector('.repo-stars');
+        const count = link.querySelector('.repo-star-count');
+
+        if (!repository || !stars || !count) {
+            return;
+        }
+
+        const encodedRepository = repository.split('/').map(encodeURIComponent).join('/');
+        fetch(`https://api.github.com/repos/${encodedRepository}`, {
+            headers: { Accept: 'application/vnd.github+json' }
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`GitHub API returned ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(repositoryData => {
+                const starCount = repositoryData.stargazers_count;
+                if (!Number.isInteger(starCount)) {
+                    return;
+                }
+
+                const formattedCount = new Intl.NumberFormat('en', {
+                    notation: starCount >= 1000 ? 'compact' : 'standard',
+                    maximumFractionDigits: 1
+                }).format(starCount);
+                const label = `${starCount} GitHub ${starCount === 1 ? 'star' : 'stars'}`;
+
+                count.textContent = formattedCount;
+                stars.setAttribute('aria-label', label);
+                stars.title = label;
+            })
+            .catch(() => {
+                // Keep the server-rendered count when GitHub is unavailable or rate-limited.
+            });
+    });
+
+    const alphaXivLinks = Array.from(document.querySelectorAll('[data-alphaxiv-paper]'))
+        .filter(link => link.dataset.alphaxivPaper && link.querySelector('.alphaxiv-like-count'));
+
+    const fetchWithTimeout = (url, timeoutMs = 8000) => {
+        const controller = new AbortController();
+        const timeout = window.setTimeout(() => controller.abort(), timeoutMs);
+        return fetch(url, {
+            headers: { Accept: 'application/json' },
+            cache: 'no-store',
+            signal: controller.signal
+        }).finally(() => window.clearTimeout(timeout));
+    };
+
+    const updateAlphaXivLike = async link => {
+        const paperId = link.dataset.alphaxivPaper;
+        const count = link.querySelector('.alphaxiv-like-count');
+        const encodedPaperId = encodeURIComponent(paperId);
+        const cacheBuster = `?homepage_timestamp=${Date.now()}`;
+        const endpoints = [
+            `https://api.alphaxiv.org/papers/v3/legacy/${encodedPaperId}${cacheBuster}`,
+            `https://proxy.cors.sh/https://api.alphaxiv.org/papers/v3/legacy/${encodedPaperId}${cacheBuster}`
+        ];
+
+        for (const endpoint of endpoints) {
+            try {
+                const response = await fetchWithTimeout(endpoint);
+                if (!response.ok) {
+                    continue;
+                }
+
+                const payload = await response.json();
+                const likeCount = payload?.paper?.paper_group?.metrics?.public_total_votes;
+                if (!Number.isInteger(likeCount) || likeCount < 0) {
+                    continue;
+                }
+
+                count.textContent = String(likeCount);
+                const label = `${likeCount} ${likeCount === 1 ? 'like' : 'likes'} on alphaXiv`;
+                link.setAttribute('aria-label', label);
+                link.title = label;
+                return;
+            } catch {
+                // Keep the server-rendered fallback when alphaXiv is unavailable.
+            }
+        }
+    };
+
+    const refreshAlphaXivLikes = () => {
+        if (document.visibilityState === 'hidden') {
+            return;
+        }
+        alphaXivLinks.forEach(link => updateAlphaXivLike(link));
+    };
+
+    if (alphaXivLinks.length > 0) {
+        refreshAlphaXivLikes();
+        window.setInterval(refreshAlphaXivLikes, 5 * 60 * 1000);
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key !== 'Escape') {
+            return;
+        }
+
+        document.querySelectorAll('.bib-toggle[aria-expanded="true"]').forEach(button => {
+            const panel = document.getElementById(button.getAttribute('aria-controls'));
+            if (panel) {
+                panel.hidden = true;
+            }
+            button.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+});
+
+function copyText(text, message) {
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text)
+            .then(() => showNotification(message))
+            .catch(() => copyTextWithFallback(text, message));
+        return;
+    }
+
+    copyTextWithFallback(text, message);
+}
+
+function copyTextWithFallback(text, message) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        if (document.execCommand('copy')) {
+            showNotification(message);
+        }
+    } finally {
+        document.body.removeChild(textArea);
+    }
+}
+
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'site-notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+
+    requestAnimationFrame(() => {
+        notification.classList.add('visible');
+    });
+
+    setTimeout(() => {
+        notification.classList.remove('visible');
+        setTimeout(() => notification.remove(), 250);
+    }, 2200);
+}
+</script>
+
+    <script>
+    // Back to Top Button
+    window.addEventListener('scroll', () => {
+        const backToTop = document.getElementById('back-to-top');
+        const shouldShow = document.documentElement.scrollTop > 300;
+        backToTop.style.opacity = shouldShow ? '1' : '0';
+        backToTop.style.pointerEvents = shouldShow ? 'auto' : 'none';
+    });
+
+    document.getElementById("back-to-top").addEventListener("click", function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    // Hover effect
+    document.getElementById("back-to-top").addEventListener("mouseenter", function() {
+    this.style.transform = "scale(1.1)";
+    this.setAttribute('aria-live','polite');
+    });
+
+    document.getElementById("back-to-top").addEventListener("mouseleave", function() {
+    this.style.transform = "scale(1)";
+    this.removeAttribute('aria-live');
+    });
+
+    </script>
+</body>
+</html>
